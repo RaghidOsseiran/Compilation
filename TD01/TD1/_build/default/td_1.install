@@ -1,0 +1,24 @@
+lib: [
+  "_build/install/default/lib/td_1/META"
+  "_build/install/default/lib/td_1/__private__/term/.public_cmi/term.cmi" {"__private__/term/.public_cmi/term.cmi"}
+  "_build/install/default/lib/td_1/__private__/term/.public_cmi/term.cmt" {"__private__/term/.public_cmi/term.cmt"}
+  "_build/install/default/lib/td_1/__private__/term/.public_cmi/term.cmti" {"__private__/term/.public_cmi/term.cmti"}
+  "_build/install/default/lib/td_1/__private__/term/term.a" {"__private__/term/term.a"}
+  "_build/install/default/lib/td_1/__private__/term/term.cma" {"__private__/term/term.cma"}
+  "_build/install/default/lib/td_1/__private__/term/term.cmx" {"__private__/term/term.cmx"}
+  "_build/install/default/lib/td_1/__private__/term/term.cmxa" {"__private__/term/term.cmxa"}
+  "_build/install/default/lib/td_1/__private__/term/term.ml" {"__private__/term/term.ml"}
+  "_build/install/default/lib/td_1/__private__/term/term.mli" {"__private__/term/term.mli"}
+  "_build/install/default/lib/td_1/dune-package"
+  "_build/install/default/lib/td_1/opam"
+]
+libexec: [
+  "_build/install/default/lib/td_1/__private__/term/term.cmxs" {"__private__/term/term.cmxs"}
+]
+bin: [
+  "_build/install/default/bin/term_exe"
+  "_build/install/default/bin/tuto"
+]
+doc: [
+  "_build/install/default/doc/td_1/odoc-pages/index.mld" {"odoc-pages/index.mld"}
+]

@@ -1,0 +1,10 @@
+(lang dune 2.9)
+
+(name td_1)
+
+(using menhir 2.1)
+
+(generate_opam_files true)
+
+(package
+ (name td_1))

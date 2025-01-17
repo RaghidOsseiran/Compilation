@@ -1,0 +1,5 @@
+(executable
+ (public_name term_exe)
+ (name main)
+ (package td_1)
+ (libraries term))

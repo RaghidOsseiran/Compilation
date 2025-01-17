@@ -1,0 +1,3 @@
+(library
+ (package td_1)
+ (name term))

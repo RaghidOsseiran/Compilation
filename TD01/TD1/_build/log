@@ -1,0 +1,112 @@
+# dune utop
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root:
+# /autofs/unitytravail/travail/raosseiran/L3/Compilation/TD01/TD1
+# Auto-detected concurrency: 20
+$ /opt/local/opam/5.1.0/bin/ocamlc.opt -config > /tmp/cache-raosseiran/dune_750b05_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/opt/local/opam/5.1.0/bin"
+#  ; ocaml = Ok External "/opt/local/opam/5.1.0/bin/ocaml"
+#  ; ocamlc = External "/opt/local/opam/5.1.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/opt/local/opam/5.1.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/opt/local/opam/5.1.0/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/opt/local/opam/5.1.0/bin/ocamlmklib"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/autofs/unitytravail/travail/raosseiran/L3/Compilation/TD01/TD1/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External "/opt/local/opam/5.1.0/lib/ocaml"
+#      ; External "/opt/local/opam/5.1.0/lib"
+#      ]
+#  ; ocaml_config =
+#      { version = "5.1.0"
+#      ; standard_library_default = "/opt/local/opam/5.1.0/lib/ocaml"
+#      ; standard_library = "/opt/local/opam/5.1.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lzstd"; "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lzstd"; "-lm"; "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X033"
+#      ; cmi_magic_number = "Caml1999I033"
+#      ; cmo_magic_number = "Caml1999O033"
+#      ; cma_magic_number = "Caml1999A033"
+#      ; cmx_magic_number = "Caml1999Y033"
+#      ; cmxa_magic_number = "Caml1999Z033"
+#      ; ast_impl_magic_number = "Caml1999M033"
+#      ; ast_intf_magic_number = "Caml1999N033"
+#      ; cmxs_magic_number = "Caml1999D033"
+#      ; cmt_magic_number = "Caml1999T033"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  ; instrument_with = []
+#  }
+$ (cd _build/default && /opt/local/opam/5.1.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I td_1/term/.term.objs/byte -intf-suffix .ml -no-alias-deps -opaque -o td_1/term/.term.objs/byte/term.cmo -c -impl td_1/term/term.ml)
+> File "td_1/term/term.ml", line 123, characters 4-8:
+> 123 | let test = infix_string_of_term (Min(Add(Int(1), Int(2)), Sub(Int(1), Int(2))))
+>           ^^^^
+> Warning 32 [unused-value-declaration]: unused value test.
+$ (cd _build/default && /opt/local/opam/5.1.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o td_1/term/term.cma td_1/term/.term.objs/byte/term.cmo)
+$ (cd _build/default && /opt/local/opam/5.1.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o .utop/utop.bc /opt/local/opam/5.1.0/lib/ocaml/compiler-libs/ocamlcommon.cma /opt/local/opam/5.1.0/lib/ocaml/compiler-libs/ocamlbytecomp.cma /opt/local/opam/5.1.0/lib/ocaml/compiler-libs/ocamltoplevel.cma /opt/local/opam/5.1.0/lib/findlib/findlib.cma /opt/local/opam/5.1.0/lib/findlib/findlib_top.cma /opt/local/opam/5.1.0/lib/logs/logs.cma /opt/local/opam/5.1.0/lib/lwt/lwt.cma /opt/local/opam/5.1.0/lib/logs/logs_lwt.cma /opt/local/opam/5.1.0/lib/ocplib-endian/ocplib_endian.cma /opt/local/opam/5.1.0/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /opt/local/opam/5.1.0/lib/ocaml/unix/unix.cma /opt/local/opam/5.1.0/lib/ocaml/threads/threads.cma /opt/local/opam/5.1.0/lib/lwt/unix/lwt_unix.cma -I /opt/local/opam/5.1.0/lib/lwt/../stublibs /opt/local/opam/5.1.0/lib/react/react.cma /opt/local/opam/5.1.0/lib/lwt_react/lwt_react.cma /opt/local/opam/5.1.0/lib/result/result.cma /opt/local/opam/5.1.0/lib/uutf/uutf.cma /opt/local/opam/5.1.0/lib/uucp/uucp.cma /opt/local/opam/5.1.0/lib/uuseg/uuseg.cma /opt/local/opam/5.1.0/lib/zed/zed.cma /opt/local/opam/5.1.0/lib/trie/trie.cma /opt/local/opam/5.1.0/lib/mew/mew.cma /opt/local/opam/5.1.0/lib/mew_vi/mew_vi.cma /opt/local/opam/5.1.0/lib/lambda-term/lambda_term.cma -I /opt/local/opam/5.1.0/lib/lambda-term/../stublibs /opt/local/opam/5.1.0/lib/xdg/xdg.cma -I /opt/local/opam/5.1.0/lib/xdg/../stublibs /opt/local/opam/5.1.0/lib/utop/uTop.cma td_1/term/term.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)

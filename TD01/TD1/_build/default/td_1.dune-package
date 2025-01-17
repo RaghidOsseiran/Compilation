@@ -1,0 +1,43 @@
+(lang dune 3.11)
+(name td_1)
+(sections (lib .) (libexec .) (bin ../../bin) (doc ../../doc/td_1))
+(files
+ (lib
+  (META
+   __private__/term/.public_cmi/term.cmi
+   __private__/term/.public_cmi/term.cmt
+   __private__/term/.public_cmi/term.cmti
+   __private__/term/term.a
+   __private__/term/term.cma
+   __private__/term/term.cmx
+   __private__/term/term.cmxa
+   __private__/term/term.ml
+   __private__/term/term.mli
+   dune-package
+   opam))
+ (libexec (__private__/term/term.cmxs))
+ (bin (term_exe tuto))
+ (doc (odoc-pages/index.mld)))
+(library
+ (name td_1.__private__.term)
+ (kind normal)
+ (archives
+  (byte __private__/term/term.cma)
+  (native __private__/term/term.cmxa))
+ (plugins
+  (byte __private__/term/term.cma)
+  (native __private__/term/term.cmxs))
+ (native_archives __private__/term/term.a)
+ (main_module_name Term)
+ (modes byte native)
+ (obj_dir
+  (public_cmi_ocaml_dir .public_cmi)
+  (public_cmi_melange_dir melange/.public_cmi_melange))
+ (modules
+  (singleton
+   (obj_name term)
+   (visibility public)
+   (source
+    (path Term)
+    (intf (path __private__/term/term.mli))
+    (impl (path __private__/term/term.ml))))))

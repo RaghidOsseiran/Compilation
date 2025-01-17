@@ -1,0 +1,12 @@
+package "__private__" (
+  directory = "__private__"
+  package "term" (
+    directory = "term"
+    description = ""
+    requires = ""
+    archive(byte) = "term.cma"
+    archive(native) = "term.cmxa"
+    plugin(byte) = "term.cma"
+    plugin(native) = "term.cmxs"
+  )
+)
