@@ -37,6 +37,21 @@ let instructions = [
 ("while_10",Block([Var_decl(TInt,"x",Annotation.create_dummy ());Var_decl(TInt,"y",Annotation.create_dummy ());Affect("x",Cst_i(0,Annotation.create_dummy ()),Annotation.create_dummy ());Affect("y",Cst_i(0,Annotation.create_dummy ()),Annotation.create_dummy ());While(Binop(Lt,Var("x",Annotation.create_dummy ()),Cst_i(10,Annotation.create_dummy ()),Annotation.create_dummy ()),Block([Affect("y",Binop(Add,Var("y",Annotation.create_dummy ()),Cst_i(2,Annotation.create_dummy ()),Annotation.create_dummy ()),Annotation.create_dummy ());Affect("x",Binop(Add,Var("x",Annotation.create_dummy ()),Cst_i(1,Annotation.create_dummy ()),Annotation.create_dummy ()),Annotation.create_dummy ());],Annotation.create_dummy ()),Annotation.create_dummy ());],Annotation.create_dummy ())) ; 
 ("exo4_1",Affect("x",Binop(Add,Var("y",Annotation.create_dummy ()),Cst_i(2,Annotation.create_dummy ()),Annotation.create_dummy ()),Annotation.create_dummy ())) ; 
 ("while_false",Block([Var_decl(TInt,"x",Annotation.create_dummy ());While(Cst_b(false,Annotation.create_dummy ()),Affect("x",Cst_i(1,Annotation.create_dummy ()),Annotation.create_dummy ()),Annotation.create_dummy ());],Annotation.create_dummy ())) ; 
+("while_test_made", 
+ Block([
+   Affect("x", Cst_i(5, Annotation.create_dummy()), Annotation.create_dummy()); 
+   While(
+     Binop(Lt, Var("x", Annotation.create_dummy()), Cst_i(10, Annotation.create_dummy()), Annotation.create_dummy()), 
+     Block([
+       Affect(
+         "x", 
+         Binop(Add, Var("x", Annotation.create_dummy()), Cst_i(1, Annotation.create_dummy()), Annotation.create_dummy()), 
+         Annotation.create_dummy()
+       )
+     ], Annotation.create_dummy())
+   , Annotation.create_dummy())
+ ], Annotation.create_dummy())
+);
 ]
 
 let programs = [
